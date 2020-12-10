@@ -51,6 +51,7 @@ const SignIn = () => {
                 />
 
                 <Button>sign in</Button>
+                <Button isGoogleSignIn>sign in with Google</Button>
             </form>
         </div>
     )

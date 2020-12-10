@@ -5,7 +5,7 @@
   border: none;
   margin-top: 2rem;
   cursor: pointer;
-  background-color: #99f0f0;
+  background-color: #6dd5ed;
   text-align: center;
   color: #ffffff;
   font-size: 1rem;
@@ -14,7 +14,17 @@
   transition: all 1.2s;
 
   &:hover {
-    background-color: darken(#99f0f0, 20%);
+    background-color: lighten(#2193b0, 15%);
     transform: translateY(-3px);
+  }
+
+  &.google-sign-in {
+    background-color: #4285f4;
+    color: #fff;
+
+    &:hover {
+      background-color: darken(#357ae8, 10%);
+      border: none;
+    }
   }
 }
