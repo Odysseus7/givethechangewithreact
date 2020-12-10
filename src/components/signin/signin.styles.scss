@@ -1,0 +1,28 @@
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  margin-top: -1.5rem;
+}
+
+.heading-primary,
+.intro {
+  text-align: center;
+}
+
+.heading-primary {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.intro {
+  width: 65%;
+  font-size: 1rem;
+}
+
+.blue {
+  color: #99f0f0;
+  font-weight: 700;
+}

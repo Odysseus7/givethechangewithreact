@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import FormInput from '../form-input/formInput.component';
+import Button from '../button/button.component';
+
+import './signin.styles.scss';
 
 const SignIn = () => {
     const [login, setLogin] = useState({
@@ -23,7 +26,9 @@ const SignIn = () => {
     return (
         <div className="sign-in">
             <h1 className="heading-primary">Sign in to start keeping track</h1>
-            <p className="intro">If you don't have an account you can register <span>here</span></p>
+            <p className="intro">
+                If you don't have an account, you can register <a href="/signup"><span className="blue">here</span></a>
+            </p>
 
             <form className="sign-in-form" onSubmit={handleSubmit}>
                 <FormInput
@@ -43,6 +48,8 @@ const SignIn = () => {
                     label="Password"
                     required
                 />
+
+                <Button>sign in</Button>
             </form>
         </div>
     )

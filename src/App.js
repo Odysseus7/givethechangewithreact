@@ -8,6 +8,7 @@ function App() {
     <Router>
       <Switch>
           <Route exact path='/' component={index} />
+          {/* <Route exact path='/signin' component={SignIn} /> */}
           {/* <Route exact path='/signin' component={SignInAndSignUpPage} /> */}
       </Switch>
     </Router>
