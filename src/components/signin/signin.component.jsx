@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import FormInput from '../form-input/formInput.component';
 import Button from '../button/button.component';
 
@@ -27,7 +28,7 @@ const SignIn = () => {
         <div className="sign-in">
             <h1 className="heading-primary">Sign in to start keeping track</h1>
             <p className="intro">
-                If you don't have an account, you can register <a href="/signup"><span className="blue">here</span></a>
+                If you don't have an account, you can register <Link to="/signup"><span className="blue">here</span></Link>
             </p>
 
             <form className="sign-in-form" onSubmit={handleSubmit}>

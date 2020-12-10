@@ -2,8 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 4rem;
   height: 50vh;
-  margin-top: -1.5rem;
+
+  &-form {
+    padding: 40px 0;
+  }
 }
 
 .heading-primary,
@@ -25,4 +29,9 @@
 .blue {
   color: #99f0f0;
   font-weight: 700;
+  transition: all 1.1s;
+
+  &:hover {
+    color: darken(#99f0f0, 10%);
+  }
 }
