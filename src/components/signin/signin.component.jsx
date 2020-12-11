@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import FormInput from '../form-input/formInput.component';
 import Button from '../button/button.component';
 
+import { signInWithGoogle } from '../../firebase/firebase.utils';
+
 import './signin.styles.scss';
 
 const SignIn = () => {
@@ -50,8 +52,8 @@ const SignIn = () => {
                     required
                 />
 
-                <Button>sign in</Button>
-                <Button isGoogleSignIn>sign in with Google</Button>
+                <Button type="submit">sign in</Button>
+                <Button onClick={signInWithGoogle} isGoogleSignIn>sign in with Google</Button>
             </form>
         </div>
     )

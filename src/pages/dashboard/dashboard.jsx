@@ -1,10 +1,13 @@
 import React from 'react';
+
+import { auth } from '../../firebase/firebase.utils';
+
 import './dashboard.styles.scss';
 
-const Dashboard = () => {
+const Dashboard = ({currentUser}) => {
     return (
-        <div>
-            <h1>Hello World!</h1>
+        <div className="dashboard">
+            <h1>Hello {currentUser.displayName}!</h1>
         </div>
     )
 }
