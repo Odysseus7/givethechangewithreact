@@ -1,12 +1,13 @@
-import React, {Component, useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 import Index from './pages/index/index';
 import Register from './pages/register/register';
 import Dashboard from './pages/dashboard/dashboard';
 
 import { auth } from './firebase/firebase.utils';
 import './App.css';
+import { createUserProfileDocument } from './firebase/firebase.utils';
 
 
 function App() {
@@ -19,8 +20,19 @@ function App() {
     behave exactly like componentDidMount. If you pass a value, useEffect will execute everytime
     those values change.*/
 
-    unsubscribeFromAuth = auth.onAuthStateChanged(user => {
-      setState({ currentUser: user});
+    unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+      if(userAuth) {
+        const userRef = await createUserProfileDocument(userAuth);
+
+        userRef.onSnapshot(snapshot => {
+          setState({currentUser: {
+            id: snapshot.id,
+            ...snapshot.data()
+          }});
+        });
+      }
+
+      setState({currentUser: null}) // if there is no userauth, there is no current user.
     });
 
     return function cleanup() {
@@ -33,9 +45,9 @@ function App() {
     <div className="App">
     <Router>
       <Switch> 
-          <Route exact path='/' render={props => state.currentUser ? <Dashboard {...props} currentUser={state.currentUser} /> : Index} />
+          <Route exact path='/' render={props => state.currentUser ? <Dashboard {...props} currentUser={state.currentUser} /> : <Index />} />
           <Route exact path='/signup' component={Register} />
-          <Route path='/dashboard' render={props => <Dashboard {...props} currentUser={state.currentUser} />}/>
+          <Route exact path='/dashboard' render={props => state.currentUser ? <Dashboard {...props} currentUser={state.currentUser} /> : <Redirect to="/" />}/>
       </Switch>
     </Router>
 

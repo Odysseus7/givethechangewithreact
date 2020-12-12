@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { auth, signInWithGoogle } from '../../firebase/firebase.utils';
+import { Link, Redirect } from 'react-router-dom';
 import FormInput from '../form-input/formInput.component';
 import Button from '../button/button.component';
 
-import { signInWithGoogle } from '../../firebase/firebase.utils';
+
 
 import './signin.styles.scss';
 
@@ -13,9 +14,22 @@ const SignIn = () => {
         password: '',
     });
 
+    const [redirect, setRedirect] = useState(null);
+    if(redirect) {
+        return <Redirect to={redirect} />
+    }
+
     const handleSubmit = async event => {
         event.preventDefault();
 
+        try {
+            await auth.signInWithEmailAndPassword(email, password);
+            setRedirect("/dashboard");
+        } catch (error) {
+            console.error(error);
+        }
+        
+        
     }
 
     const handleChange = event => {

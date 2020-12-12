@@ -8,6 +8,7 @@ const Dashboard = ({currentUser}) => {
     return (
         <div className="dashboard">
             <h1>Hello {currentUser.displayName}!</h1>
+            { currentUser ? <div className="logout" onClick={() => auth.signOut()}>sign out</div> : null}
         </div>
     )
 }
