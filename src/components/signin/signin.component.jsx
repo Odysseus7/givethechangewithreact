@@ -4,8 +4,6 @@ import { Link, Redirect } from 'react-router-dom';
 import FormInput from '../form-input/formInput.component';
 import Button from '../button/button.component';
 
-
-
 import './signin.styles.scss';
 
 const SignIn = () => {

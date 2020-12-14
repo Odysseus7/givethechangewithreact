@@ -5,10 +5,8 @@ import Index from './pages/index/index';
 import Register from './pages/register/register';
 import Dashboard from './pages/dashboard/dashboard';
 
-import { auth } from './firebase/firebase.utils';
+import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import './App.css';
-import { createUserProfileDocument } from './firebase/firebase.utils';
-
 
 function App() {
   const [state, setState] = useState({currentUser: null});
