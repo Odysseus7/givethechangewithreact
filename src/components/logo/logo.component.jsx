@@ -6,15 +6,16 @@ import './logo.styles.scss';
 
 const MainLogo = () => {
     return (
-        <div className="logobig">
-            <LogoBig />
+        <div className="svg_container">
+            <LogoBig />  
         </div>
+        
     )
 }
 
 export const SecondaryLogo = () => {
     return (
-        <div className="logosmall">
+        <div className="svg_container">
             <LogoSmall />
         </div>
     )

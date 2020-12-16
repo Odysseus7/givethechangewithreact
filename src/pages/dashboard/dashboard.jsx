@@ -57,6 +57,10 @@ const Dashboard = ({currentUser}) => {
         
     }
 
+    const reset = () => {
+        firestore.collection('users').doc(userId).update({balance: 0});
+    }
+
     const handleSubmit = (event) => {
         event.preventDefault();
         const change = calculateChange(purchase);
@@ -93,6 +97,7 @@ const Dashboard = ({currentUser}) => {
                         required
                     />
                     <Button type="submit">add</Button>
+                    <Button onClick={reset}>reset</Button>
                     { currentUser ? <div className="logout" onClick={() => auth.signOut()}>sign out</div> : null}
                 </form>
                 <Footer />

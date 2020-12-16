@@ -76,3 +76,17 @@
     transform: translateY(-3px);
   }
 }
+
+@media only screen and (max-width: 374px) {
+  .main {
+    // height: 100vh;
+  }
+
+  .date {
+    margin-top: 0;
+  }
+
+  footer {
+    margin-top: 0rem;
+  }
+}
