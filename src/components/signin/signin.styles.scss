@@ -35,6 +35,8 @@
   }
 }
 
+// PHONE
+
 @media only screen and (max-width: 374px) {
   .svg_container svg {
     margin-top: 5rem;
@@ -98,5 +100,11 @@
 
   .sign-container footer {
     font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .sign-in {
+    width: 35%;
   }
 }

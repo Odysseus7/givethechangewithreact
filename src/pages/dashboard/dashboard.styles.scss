@@ -107,3 +107,20 @@
     margin-top: 0rem;
   }
 }
+
+// DESKTOP
+@media only screen and (min-width: 992px) {
+  .main .svg_container svg {
+    margin-top: 0;
+  }
+  .add button {
+    width: 20rem;
+  }
+
+  .logout {
+    margin-top: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+}

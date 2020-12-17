@@ -3,6 +3,7 @@ import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 import { Redirect } from 'react-router-dom';
 import FormInput from '../form-input/formInput.component';
 import Button from '../button/button.component';
+
 import './signup.styles.scss';
 
 const SignUp = () => {

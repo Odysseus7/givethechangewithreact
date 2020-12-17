@@ -66,7 +66,7 @@ const Dashboard = ({currentUser}) => {
         const change = calculateChange(purchase);
         updateBalance(userId, change);
 
-        setPurchase(0);
+        setPurchase("");
     }
 
     return (

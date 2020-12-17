@@ -1,1 +1,17 @@
+//desktop
+@media only screen and (min-width: 992px) {
+  .signup {
+    width: 30%;
+  }
+}
 
+//4k
+@media only screen and (min-width: 2000px) {
+  .heading-primary {
+    margin-bottom: 6rem;
+  }
+
+  .signup {
+    width: 35%;
+  }
+}
