@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   margin-top: 4rem;
-  height: 50vh;
 
   &-form {
     padding: 40px 0;
@@ -33,5 +32,71 @@
 
   &:hover {
     color: lighten(#2193b0, 15%);
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .svg_container svg {
+    margin-top: 5rem;
+    height: 3.5rem;
+  }
+
+  .sign-in {
+    margin-top: 0;
+
+    &-form {
+      width: 75%;
+    }
+
+    footer {
+      margin-top: 0;
+    }
+  }
+
+  .heading-primary {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .intro {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 374px) {
+  .svg_container svg {
+    margin-top: 5rem;
+  }
+
+  .sign-in {
+    margin-top: 2rem;
+
+    &-form {
+      width: 70%;
+    }
+  }
+
+  .heading-primary {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 374px) and (min-height: 700px) {
+  .svg_container svg {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  .heading-primary {
+    font-size: 1.6rem;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+  }
+
+  .sign-container footer {
+    font-size: 0.9rem;
   }
 }
