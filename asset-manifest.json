@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "//github.com/Odysseus7/givethechangewithreact/static/css/main.e6c5b9b2.chunk.css",
+    "main.js": "//github.com/Odysseus7/givethechangewithreact/static/js/main.937bb6c1.chunk.js",
+    "main.js.map": "//github.com/Odysseus7/givethechangewithreact/static/js/main.937bb6c1.chunk.js.map",
+    "runtime-main.js": "//github.com/Odysseus7/givethechangewithreact/static/js/runtime-main.3877bf4a.js",
+    "runtime-main.js.map": "//github.com/Odysseus7/givethechangewithreact/static/js/runtime-main.3877bf4a.js.map",
+    "static/js/2.f5aa48e1.chunk.js": "//github.com/Odysseus7/givethechangewithreact/static/js/2.f5aa48e1.chunk.js",
+    "static/js/2.f5aa48e1.chunk.js.map": "//github.com/Odysseus7/givethechangewithreact/static/js/2.f5aa48e1.chunk.js.map",
+    "index.html": "//github.com/Odysseus7/givethechangewithreact/index.html",
+    "static/css/main.e6c5b9b2.chunk.css.map": "//github.com/Odysseus7/givethechangewithreact/static/css/main.e6c5b9b2.chunk.css.map",
+    "static/js/2.f5aa48e1.chunk.js.LICENSE.txt": "//github.com/Odysseus7/givethechangewithreact/static/js/2.f5aa48e1.chunk.js.LICENSE.txt",
+    "static/media/dashboard.styles.scss": "//github.com/Odysseus7/givethechangewithreact/static/media/blob.a9300b19.svg",
+    "static/media/logo.b798fa09.svg": "//github.com/Odysseus7/givethechangewithreact/static/media/logo.b798fa09.svg",
+    "static/media/logosmall.130bdf25.svg": "//github.com/Odysseus7/givethechangewithreact/static/media/logosmall.130bdf25.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3877bf4a.js",
+    "static/js/2.f5aa48e1.chunk.js",
+    "static/css/main.e6c5b9b2.chunk.css",
+    "static/js/main.937bb6c1.chunk.js"
+  ]
+}
