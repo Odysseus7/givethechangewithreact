@@ -71,8 +71,9 @@ const Dashboard = ({currentUser}) => {
 
     return (
         <div className="dashboard">
-            <Logo />
+            
             <div className="main">
+            <Logo />
                 <p className="date">{`${displayDate()}`}</p>
                 <div className="balance">
                     <p className="balance_text">current balance</p>
@@ -98,8 +99,9 @@ const Dashboard = ({currentUser}) => {
                     />
                     <Button type="submit">add</Button>
                     <Button onClick={reset}>reset</Button>
-                    { currentUser ? <div className="logout" onClick={() => auth.signOut()}>sign out</div> : null}
+                    
                 </form>
+                { currentUser ? <div className="logout" onClick={() => auth.signOut()}>sign out</div> : null}
                 <Footer />
             </div>
         </div>
