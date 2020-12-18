@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
     <Router>
-      <Switch> 
+      <Switch basename="/givethechangewithreact"> 
           <Route path='/' render={props => state.currentUser ? <Dashboard {...props} currentUser={state.currentUser} /> : <Index />} />
           <Route path='/signup' component={Register} />
           <Route path='/dashboard' render={props => state.currentUser ? <Dashboard {...props} currentUser={state.currentUser} /> : <Redirect to="/" />}/>
