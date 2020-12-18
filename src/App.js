@@ -41,11 +41,11 @@ function App() {
 
   return (
     <div className="App">
-    <Router>
+    <Router basename="/gtc">
       <Switch> 
-          <Route exact path='/' render={props => state.currentUser ? <Dashboard {...props} currentUser={state.currentUser} /> : <Index />} />
-          <Route exact path='/signup' component={Register} />
-          <Route exact path='/dashboard' render={props => state.currentUser ? <Dashboard {...props} currentUser={state.currentUser} /> : <Redirect to="/" />}/>
+          <Route path={`${process.env.PUBLIC_URL}/`} render={props => state.currentUser ? <Dashboard {...props} currentUser={state.currentUser} /> : <Index />} />
+          <Route path={`${process.env.PUBLIC_URL}/signup`} component={Register} />
+          <Route path={`${process.env.PUBLIC_URL}/dashboard`} render={props => state.currentUser ? <Dashboard {...props} currentUser={state.currentUser} /> : <Redirect to="/" />}/>
       </Switch>
     </Router>
 
