@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/givethechangewithreact/static/css/main.c9d64409.chunk.css",
-    "main.js": "/givethechangewithreact/static/js/main.996ef9f1.chunk.js",
-    "main.js.map": "/givethechangewithreact/static/js/main.996ef9f1.chunk.js.map",
+    "main.css": "/givethechangewithreact/static/css/main.a02d4403.chunk.css",
+    "main.js": "/givethechangewithreact/static/js/main.53ea498a.chunk.js",
+    "main.js.map": "/givethechangewithreact/static/js/main.53ea498a.chunk.js.map",
     "runtime-main.js": "/givethechangewithreact/static/js/runtime-main.77fcbb43.js",
     "runtime-main.js.map": "/givethechangewithreact/static/js/runtime-main.77fcbb43.js.map",
     "static/js/2.2ab90e7c.chunk.js": "/givethechangewithreact/static/js/2.2ab90e7c.chunk.js",
     "static/js/2.2ab90e7c.chunk.js.map": "/givethechangewithreact/static/js/2.2ab90e7c.chunk.js.map",
     "index.html": "/givethechangewithreact/index.html",
-    "static/css/main.c9d64409.chunk.css.map": "/givethechangewithreact/static/css/main.c9d64409.chunk.css.map",
+    "static/css/main.a02d4403.chunk.css.map": "/givethechangewithreact/static/css/main.a02d4403.chunk.css.map",
     "static/js/2.2ab90e7c.chunk.js.LICENSE.txt": "/givethechangewithreact/static/js/2.2ab90e7c.chunk.js.LICENSE.txt",
-    "static/media/dashboard.styles.scss": "/givethechangewithreact/static/media/blob.a9300b19.svg",
+    "static/media/balance.styles.scss": "/givethechangewithreact/static/media/blob.a9300b19.svg",
     "static/media/logo.b798fa09.svg": "/givethechangewithreact/static/media/logo.b798fa09.svg",
     "static/media/logosmall.130bdf25.svg": "/givethechangewithreact/static/media/logosmall.130bdf25.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.77fcbb43.js",
     "static/js/2.2ab90e7c.chunk.js",
-    "static/css/main.c9d64409.chunk.css",
-    "static/js/main.996ef9f1.chunk.js"
+    "static/css/main.a02d4403.chunk.css",
+    "static/js/main.53ea498a.chunk.js"
   ]
 }
