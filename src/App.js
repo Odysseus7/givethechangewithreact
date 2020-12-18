@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
     <Router>
-      <Switch basename="/givethechangewithreact"> 
+      <Switch basename={process.env.PUBLIC_URL}> 
           <Route path={`${process.env.PUBLIC_URL}/`} render={props => state.currentUser ? <Dashboard {...props} currentUser={state.currentUser} /> : <Index />} />
           <Route path={`${process.env.PUBLIC_URL}/signup`} component={Register} />
           <Route path={`${process.env.PUBLIC_URL}/dashboard`} render={props => state.currentUser ? <Dashboard {...props} currentUser={state.currentUser} /> : <Redirect to="/" />}/>
