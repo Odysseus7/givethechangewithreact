@@ -18,66 +18,12 @@
   text-align: center;
 }
 
-.date {
-  margin-top: 2rem;
-}
-
-.add {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 2rem;
-
-  &_intro {
-    padding: 1rem 2rem;
-    width: 70%;
-  }
-
-  .form-input {
-    text-align: center;
-  }
-
-  button {
-    width: 10rem;
-  }
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.logout {
-  margin-top: 2rem;
-  cursor: pointer;
-  transition: all 1.2s;
-
-  &:hover {
-    color: lighten(#2193b0, 15%);
-    transform: translateY(-3px);
-  }
-}
-
 .main footer {
   margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 374px) {
-  .add {
-    &_intro {
-      width: 80%;
-    }
-  }
-  .balance {
-    background-size: 18rem;
-    height: 45vh;
-  }
-
-  .group {
-    margin: 0;
-  }
-
-  .date {
+  .main .svg_container svg {
     margin-top: 0;
   }
 
@@ -90,15 +36,5 @@
 @media only screen and (min-width: 992px) {
   .main .svg_container svg {
     margin-top: 0;
-  }
-  .add button {
-    width: 20rem;
-  }
-
-  .logout {
-    margin-top: 0;
-    position: absolute;
-    top: 20px;
-    left: 20px;
   }
 }
