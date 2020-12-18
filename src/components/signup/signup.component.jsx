@@ -30,7 +30,7 @@ const SignUp = () => {
         try {
             const { user } = await auth.createUserWithEmailAndPassword(email, password);
             await createUserProfileDocument(user, {displayName});
-            setRedirect('/dashboard');
+            setRedirect(`${process.env.PUBLIC_URL}/dashboard`);
 
         } catch (error) {
             console.error(error);

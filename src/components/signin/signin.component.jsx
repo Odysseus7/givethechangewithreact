@@ -22,7 +22,7 @@ const SignIn = () => {
 
         try {
             await auth.signInWithEmailAndPassword(email, password);
-            setRedirect('/dashboard');
+            setRedirect(`${process.env.PUBLIC_URL}/dashboard`);
         } catch (error) {
             console.error(error);
         }
@@ -40,7 +40,7 @@ const SignIn = () => {
         <div className="sign-in">
             <h1 className="heading-primary">Sign in to start keeping track</h1>
             <p className="intro">
-                If you don't have an account, you can register <Link to='/signup'><span className="blue">here</span></Link>
+                If you don't have an account, you can register <Link to={`${process.env.PUBLIC_URL}/signup`}><span className="blue">here</span></Link>
             </p>
 
             <form className="sign-in-form" onSubmit={handleSubmit}>
