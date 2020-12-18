@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div className="App">
-    <Router basename="/gtc">
+    <Router>
       <Switch> 
           <Route path={`${process.env.PUBLIC_URL}/`} render={props => state.currentUser ? <Dashboard {...props} currentUser={state.currentUser} /> : <Index />} />
           <Route path={`${process.env.PUBLIC_URL}/signup`} component={Register} />
