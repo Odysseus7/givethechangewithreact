@@ -2,6 +2,8 @@
 
 Submit your purchases and invest your change! This project was made to play around with the concepts learned during the Complete React Developer course (https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)
 
+Check it out on https://odysseus7.github.io/givethechangewithreact/
+
 ## Why?
 
 I want to be able to track my progress and show recruiters what I am capable of. Besides that, I needed an application that calculated my change, cost-free 😄
