@@ -3,10 +3,12 @@ import React, {useState} from 'react';
 import Logo from '../../components/logo/logo.component';
 
 import firebase, { auth, firestore } from '../../firebase/firebase.utils';
+import { formatMoney } from '../../functions/functions';
 
-import Footer from '../../components/footer/footer.component';
+import Balance from '../../components/balance/balance.component';
 import FormInput from '../../components/form-input/formInput.component';
 import Button from '../../components/button/button.component';
+import Footer from '../../components/footer/footer.component';
 
 import './dashboard.styles.scss';
 
@@ -22,9 +24,7 @@ const Dashboard = ({currentUser}) => {
         return date.toLocaleDateString('en-EN', options).toLowerCase();
     }
 
-    const formatMoney = (number) => {
-        return new Intl.NumberFormat('nl-NL', { style: 'currency', currency: 'EUR' }).format(number);
-    }
+    
 
     const handleChange = (event) => {
         const value = event.target.value;
@@ -73,12 +73,9 @@ const Dashboard = ({currentUser}) => {
         <div className="dashboard">
             
             <div className="main">
-            <Logo />
+                <Logo />
                 <p className="date">{`${displayDate()}`}</p>
-                <div className="balance">
-                    <p className="balance_text">current balance</p>
-                    <div className="balance_amount">{formatMoney(currentUser.balance)}</div>
-                </div>
+                <Balance currentUser={currentUser} />
 
                 <form className="add" onSubmit={handleSubmit} method="post">
                     <div className="add_intro">
