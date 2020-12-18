@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "https://odysseus7.github.io/givethechangewithreact/static/css/main.fa25c145.chunk.css",
-    "main.js": "https://odysseus7.github.io/givethechangewithreact/static/js/main.80fbed09.chunk.js",
-    "main.js.map": "https://odysseus7.github.io/givethechangewithreact/static/js/main.80fbed09.chunk.js.map",
-    "runtime-main.js": "https://odysseus7.github.io/givethechangewithreact/static/js/runtime-main.2f22d8b1.js",
-    "runtime-main.js.map": "https://odysseus7.github.io/givethechangewithreact/static/js/runtime-main.2f22d8b1.js.map",
-    "static/js/2.9fdfb416.chunk.js": "https://odysseus7.github.io/givethechangewithreact/static/js/2.9fdfb416.chunk.js",
-    "static/js/2.9fdfb416.chunk.js.map": "https://odysseus7.github.io/givethechangewithreact/static/js/2.9fdfb416.chunk.js.map",
-    "index.html": "https://odysseus7.github.io/givethechangewithreact/index.html",
-    "static/css/main.fa25c145.chunk.css.map": "https://odysseus7.github.io/givethechangewithreact/static/css/main.fa25c145.chunk.css.map",
-    "static/js/2.9fdfb416.chunk.js.LICENSE.txt": "https://odysseus7.github.io/givethechangewithreact/static/js/2.9fdfb416.chunk.js.LICENSE.txt",
-    "static/media/balance.styles.scss": "https://odysseus7.github.io/givethechangewithreact/static/media/blob.a9300b19.svg",
-    "static/media/logo.b798fa09.svg": "https://odysseus7.github.io/givethechangewithreact/static/media/logo.b798fa09.svg",
-    "static/media/logosmall.130bdf25.svg": "https://odysseus7.github.io/givethechangewithreact/static/media/logosmall.130bdf25.svg"
+    "main.css": "/givethechangewithreact/static/css/main.a02d4403.chunk.css",
+    "main.js": "/givethechangewithreact/static/js/main.da432b5a.chunk.js",
+    "main.js.map": "/givethechangewithreact/static/js/main.da432b5a.chunk.js.map",
+    "runtime-main.js": "/givethechangewithreact/static/js/runtime-main.77fcbb43.js",
+    "runtime-main.js.map": "/givethechangewithreact/static/js/runtime-main.77fcbb43.js.map",
+    "static/js/2.2ab90e7c.chunk.js": "/givethechangewithreact/static/js/2.2ab90e7c.chunk.js",
+    "static/js/2.2ab90e7c.chunk.js.map": "/givethechangewithreact/static/js/2.2ab90e7c.chunk.js.map",
+    "index.html": "/givethechangewithreact/index.html",
+    "static/css/main.a02d4403.chunk.css.map": "/givethechangewithreact/static/css/main.a02d4403.chunk.css.map",
+    "static/js/2.2ab90e7c.chunk.js.LICENSE.txt": "/givethechangewithreact/static/js/2.2ab90e7c.chunk.js.LICENSE.txt",
+    "static/media/balance.styles.scss": "/givethechangewithreact/static/media/blob.a9300b19.svg",
+    "static/media/logo.b798fa09.svg": "/givethechangewithreact/static/media/logo.b798fa09.svg",
+    "static/media/logosmall.130bdf25.svg": "/givethechangewithreact/static/media/logosmall.130bdf25.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2f22d8b1.js",
-    "static/js/2.9fdfb416.chunk.js",
-    "static/css/main.fa25c145.chunk.css",
-    "static/js/main.80fbed09.chunk.js"
+    "static/js/runtime-main.77fcbb43.js",
+    "static/js/2.2ab90e7c.chunk.js",
+    "static/css/main.a02d4403.chunk.css",
+    "static/js/main.da432b5a.chunk.js"
   ]
 }
